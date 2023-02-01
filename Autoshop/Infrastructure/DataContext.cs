@@ -1,6 +1,6 @@
 ﻿using Autoshop.Models;
 using Microsoft.EntityFrameworkCore;
-// using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 namespace Autoshop.Infrastructure
 {

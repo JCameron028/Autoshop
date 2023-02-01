@@ -1,7 +1,7 @@
 ﻿using Autoshop.Models;
 using Autoshop.Models.ViewModels;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
+
 
 namespace Autoshop.Infrastructure.Components
 {

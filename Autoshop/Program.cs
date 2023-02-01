@@ -1,5 +1,7 @@
 using Autoshop.Infrastructure;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
+using Autoshop.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 

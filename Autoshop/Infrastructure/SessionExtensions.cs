@@ -4,7 +4,7 @@ namespace Autoshop.Infrastructure
 {
     public static class SessionExtensions
     {
-        public static void SetJson(this ISession session, string key, string value)
+        public static void SetJson(this ISession session, string key, object value)
         {
             session.SetJson(key, JsonConvert.SerializeObject(value));
         }

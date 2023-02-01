@@ -10,7 +10,7 @@ namespace Autoshop.Infrastructure
         {
             context.Database.Migrate();
 
-            if (context.Products.Count() == 0 && context.Categories.Count() == 0)
+            if (!context.Products.Any())
             {
                 Category alternator = new Category { Name = "Alternator", Slug = "alternator" };
                 Category battery = new Category { Name = "Battery", Slug = "battery" };
