@@ -45,7 +45,7 @@ namespace Autoshop.Controllers
                 cartItem.Quantity += 1;
             }
 
-            HttpContext.Session.SetJson("Cart", cart);
+            HttpContext.Session.SetJSon("Cart", cart);
 
             TempData["Success"] = "The product has been added!";
 
@@ -73,7 +73,7 @@ namespace Autoshop.Controllers
             }
             else
             {
-                HttpContext.Session.SetJson("Cart", cart);
+                HttpContext.Session.SetJSon("Cart", cart);
             }
 
             TempData["Success"] = "The product has been removed!";
@@ -93,7 +93,7 @@ namespace Autoshop.Controllers
             }
             else
             {
-                HttpContext.Session.SetJson("Cart", cart);
+                HttpContext.Session.SetJSon("Cart", cart);
             }
 
             TempData["Success"] = "The product has been removed!";
