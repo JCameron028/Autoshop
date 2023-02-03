@@ -38,7 +38,6 @@
                 </td>
                 <td>
                     <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
                     <a asp-action="Delete" asp-route-id="@item.Id" class="confirmDeletion">Delete</a>
                 </td>
             </tr>
@@ -48,7 +47,7 @@
 
 <div class="d-flex w-100 justify-content-center">
     <pagination page-count="@ViewBag.TotalPages"
-                page-target="/products/@ViewBag.CategorySlug"
+                page-target="/admin/products/@ViewBag.CategorySlug"
                 page-number="@ViewBag.PageNumber"
                 page-range="@ViewBag.PageRange">
     </pagination>
