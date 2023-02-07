@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.Authorization;
 namespace Autoshop.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize]
     public class ProductsController : Controller
     {
         private readonly DataContext _context;
