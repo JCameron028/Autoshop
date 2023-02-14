@@ -12,7 +12,7 @@
         <th>Product</th>
         <th>Quantity</th>
         <th></th>
-        <th>Prcie</th>
+        <th>Price</th>
         <th>Total</th>
     </tr>
     @foreach (var item in Model.CartItems)
@@ -35,7 +35,7 @@
         <tr>
             <td class="text-right" colspan="4">
                 <a class="btn btn-danger" asp-action="Clear">Clear Cart</a>
-                <a class="btn btn-primary" href="#">Checkout</a>
+                <a class="btn btn-primary" href="/Checkout">Checkout</a>
             </td>
         </tr>
     </table>

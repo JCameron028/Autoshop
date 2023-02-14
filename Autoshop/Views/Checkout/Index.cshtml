@@ -1,0 +1,15 @@
+﻿@model CheckoutViewModel
+
+@{
+    ViewData["Title"] = "Checkout";
+}
+<script src="https://checkout.stripe.com/checkout.js"
+        class="stripe-button"
+        data-key="pk_test_51MYtJ1AxGozpd2J14EYh2IIvDj2B6bw2rczUHBLQdoViFzwhaaiuXxP15U5jtJpaHqYHLMoWme2QCIFwG604bTi600wh4IpYTU"
+        data-name="Autoshop Payment"
+        data-description="@Model.ProductName - @Model.Price"
+        data-locale="en"
+        data-label="Confirm Payment - $@Model.GrandTotal"
+>
+
+</script>
