@@ -1,4 +1,6 @@
-﻿using Autoshop.Models;
+﻿using Autoshop.Infrastructure;
+using Autoshop.Models;
+using Autoshop.Models.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using Stripe;
 
@@ -13,21 +15,33 @@ namespace Autoshop.Controllers
             return View();
         }
 
-        [HttpPost]
-        public IActionResult Create(string stripeToken, Guid id) 
+        public IActionResult Index()
         {
-            var product = _productService.GetProductById(id);
-            var charge = new ChargeCreateOptions()
+            List<CartItem> cart = HttpContext.Session.GetJson<List<CartItem>>("Cart") ?? new List<CartItem>();
+
+            CheckoutViewModel checkoutVM = new()
             {
-                Amount = (long)(Convert.ToDouble(Item.Price)*100),
-                Currency = "cad",
-                Source = stripeToken,
-                Metadata = new Dictionary<string, string>()
-                {
-                    { }
-                }
-            }
-        
+                GrandTotal = cart.Sum(x => x.Quantity * x.Price)
+            };
+
+            return View(checkoutVM);
         }
+
+        /* [HttpPost]
+         public IActionResult Create(string stripeToken, Guid id) 
+         {
+             var product = _productService.GetProductById(id);
+             var charge = new ChargeCreateOptions()
+             {
+                 Amount = (long)(Convert.ToDouble(Item.Price) * 100),
+                 Currency = "cad",
+                 Source = stripeToken,
+                 Metadata = new Dictionary<string, string>()
+                 {
+                     { }
+                 } 
+             };
+
+         }*/
     }
 }
