@@ -28,7 +28,7 @@
                         @if (User.Identity?.IsAuthenticated ?? false)
                         {
                             <li class="nav-item">
-                                <a class="btn btn-primary" asp-area="Admin" asp-controller="Products" asp-action="Index">Products</a>
+                                <a class="btn btn-primary" asp-area="Products" asp-controller="Products" asp-action="Index">Products</a>
                             </li>
                             <li class="nav-item">
                                 <a class="btn btn-danger" asp-controller="Account" asp-action="Logout">Hi, @User.Identity.Name, Log out</a>
