@@ -26,7 +26,7 @@ namespace Autoshop.Models
 
         
         public Category Category { get; set; }
-        public string Image { get; set; } = "NoImage.jpg";
+        public string Image { get; set; } = "NoImage.png";
 
         [NotMapped]
         [FileExtension]

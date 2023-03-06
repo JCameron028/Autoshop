@@ -25,7 +25,7 @@ namespace Autoshop.Infrastructure
                         Description = "Black alternator",
                         Price = 89.99M,
                         Category = alternator,
-                        Image = "Alternator_Blk.jpg"
+                        Image = "Alternator_Blk.png"
                     },
                     new Product
                     {
@@ -34,7 +34,7 @@ namespace Autoshop.Infrastructure
                         Description = "White alternator",
                         Price = 99.99M,
                         Category = alternator,
-                        Image = "Alternator_Wht.jpg"
+                        Image = "Alternator_Wht.png"
                     },
                     new Product
                     {
@@ -43,7 +43,7 @@ namespace Autoshop.Infrastructure
                         Description = "A car battery",
                         Price = 124.99M,
                         Category = battery,
-                        Image = "Bosch_Battery1.jpg",
+                        Image = "Bosch_Battery1.png",
                     },
                     new Product
                     {
@@ -52,7 +52,7 @@ namespace Autoshop.Infrastructure
                         Description = "A car battery",
                         Price = 110.99M,
                         Category = battery,
-                        Image = "Bosch_Battery2.jpg",
+                        Image = "Bosch_Battery2.png",
                     },
                     new Product
                     {
@@ -61,7 +61,7 @@ namespace Autoshop.Infrastructure
                         Description = "A car battery",
                         Price = 84.99M,
                         Category = battery,
-                        Image = "DieHard_Battery1.jpg",
+                        Image = "DieHard_Battery1.png",
                     },
                     new Product
                     {
@@ -70,7 +70,7 @@ namespace Autoshop.Infrastructure
                         Description = "A basic car headlight",
                         Price = 29.99M,
                         Category = lights,
-                        Image = "Sylvania_Basic.jpg",
+                        Image = "Sylvania_Basic.png",
                     },
                     new Product
                     {
@@ -79,7 +79,7 @@ namespace Autoshop.Infrastructure
                         Description = "A blue colored headlight",
                         Price = 39.99M,
                         Category = lights,
-                        Image = "Sylvania_Blue.jpg",
+                        Image = "Sylvania_Blue.png",
                     },
                     new Product
                     {
@@ -88,7 +88,7 @@ namespace Autoshop.Infrastructure
                         Description = "Car brake pads 2pk.",
                         Price = 39.99M,
                         Category = brakepads,
-                        Image = "ProSeries_OEM.jpg",
+                        Image = "ProSeries_OEM.png",
                     },
                     new Product
                     {
@@ -97,7 +97,7 @@ namespace Autoshop.Infrastructure
                         Description = "Ceramic brake pads",
                         Price = 79.99M,
                         Category = brakepads,
-                        Image = "Max_BrakePads1.jpg",
+                        Image = "Max_BrakePads1.png",
                     }
 
                 );
