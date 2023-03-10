@@ -10,7 +10,7 @@
     @foreach (var item in Model)
     {
         <div class="col-4">
-            <img src="/media/products/@item.Image" class="img-fluid" alt="" max-height="250px" max-width="250px" />
+            <img src="/media/products/@item.Image" class="img-fluid" alt="" max-height="100px" max-width="100px" />
             <h4>@item.Name</h4>
             <div>
                 @Html.Raw(item.Description)

@@ -138,7 +138,7 @@ namespace Autoshop.Areas.Admin.Controllers
         {
             Product product = await _context.Products.FindAsync(id);
 
-            if (!string.Equals(product.Image, "NoImage.jpg"))
+            if (!string.Equals(product.Image, "NoImage.png"))
             {
                 string uploadsDir = Path.Combine(_webHostEnvironment.WebRootPath, "media/products");
                 string oldImagePath = Path.Combine(uploadsDir, product.Image);
